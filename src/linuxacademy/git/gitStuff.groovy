@@ -3,7 +3,7 @@ package linuxacademy.git;
 
 /* Define a function called gitCommit and pass it a gitPath, so we need to know the Git dir
  for the repo we want to return the Git commit from. */
-def gitCommit
+def gitCommit(gitPath) {
   /* this line returns the SHA/commit ID. Breaking it down, it calls the gin binary 
   from the command line and we're passing it the Git dir which we accept as a parameter
   and we do a 'rev-parse HEAD' which returns the current SHA/commit ID. 
